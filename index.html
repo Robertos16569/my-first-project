@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>TryChatGPT</title>
+    <style>
+        /* Общие стили */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        /* Хедер сайта */
+        header {
+            background-color: #ffffff;
+            padding: 20px 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Основной блок */
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        /* Заголовок внутри main */
+        .title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Описание */
+        .description {
+            font-size: 16px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /* Форма для ввода */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        textarea {
+            resize: none;
+            min-height: 100px;
+            padding: 15px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            outline: none;
+            transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        textarea:hover,
+        textarea:focus {
+            border-color: #007bff; 
+            box-shadow: 0 0 5px rgba(0,123,255,0.5);
+        }
+
+        /* Кнопка отправки */
+        button {
+            margin-top: 20px; 
+            padding: 15px; 
+            font-size: 16px; 
+            background-color: #007bff; 
+            color: #fff; 
+            border:none; 
+            border-radius:8px; 
+            cursor:pointer; 
+            transition:bg-color 0.2s ease-in-out; 
+        }
+
+        button:hover {
+           background-color:#0069d9; 
+        }
+
+        /* Адаптивность */
+        @media(max-width:600px){
+           main{
+               margin:auto; 
+               padding:15px; 
+           }
+           header{
+               flex-direction:center; 
+               flex-wrap:true; 
+           }
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TryChatGPT</h1>
+    </header>
+
+    <main>
+        <div class="title">Попробуйте ChatGPT бесплатно</div>
+        <div class="description">
+          Введите ваш вопрос или сообщение ниже и начните диалог с искусственным интеллектом.
+        </div>
+        
+        <form id="chat-form">
+          <textarea placeholder="Введите ваш вопрос..." required></textarea>
+          <button type="submit">Отправить</button>
+        </form>
+    </main>
+
+    <!-- Скрипт для обработки формы (без реальной логики) -->
+    <script>
+      document.getElementById('chat-form').addEventListener('submit', function(e){
+          e.preventDefault();
+          alert('Функциональность еще не реализована.');
+      });
+    </script>
+</body>
+</html>
